@@ -21,6 +21,7 @@ public class EventHandler implements MouseMotionListener {
 
     @Override
     public void mouseMoved(MouseEvent e) {
+        renderer.setMouseLocation(e.getX(),e.getY());
         renderer.repaint();
     }
 }

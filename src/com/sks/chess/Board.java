@@ -26,6 +26,9 @@ public class Board {
     }
 
     public GamePiece getPieceAtLocationIfExtant(Pair<Integer,Integer> location) {
+        if (!isLocationOnBoard(location)) {
+            return null;
+        }
         for (GamePiece gamePiece : piecesInPlay) {
             if (gamePiece.x == location.getKey() && gamePiece.y == location.getValue()) {
                 return gamePiece;

@@ -5,6 +5,9 @@ import javafx.util.Pair;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -12,16 +15,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GameRenderer extends JPanel {
+    int mouseX, mouseY;
     Board gameBoard;
-    JFrame drawingContainer;
     HashMap<String,BufferedImage> whiteImageDictionary;
     HashMap<String,BufferedImage> blackImageDictionary;
 
     int spaceWidth, spaceHeight, gamePieceImageOffset;
 
-    public GameRenderer(Board gameBoard, JFrame drawingContainer) {
+    public GameRenderer(Board gameBoard) {
         this.gameBoard = gameBoard;
-        this.drawingContainer = drawingContainer;
         whiteImageDictionary = new HashMap<String,BufferedImage>();
         blackImageDictionary = new HashMap<String,BufferedImage>();
         try {
@@ -40,7 +42,7 @@ public class GameRenderer extends JPanel {
     }
 
     public void loadImagesFromDirectoryIntoDictionaries() throws IOException {
-        File whiteImagesDirectory = new File("images\\white");
+        File whiteImagesDirectory = new File("images//white");
         if (whiteImagesDirectory.isDirectory()) {
             for (File imageFile : whiteImagesDirectory.listFiles()) {
                 try {
@@ -51,7 +53,7 @@ public class GameRenderer extends JPanel {
             }
         }
 
-        File blackImagesDirectory = new File("images\\black");
+        File blackImagesDirectory = new File("images//black");
         if (blackImagesDirectory.isDirectory()) {
             for (File imageFile : blackImagesDirectory.listFiles()) {
                 try {
@@ -66,8 +68,9 @@ public class GameRenderer extends JPanel {
     public void renderBoard(Graphics g) {
         spaceWidth = getWidth()/(gameBoard.width);
         spaceHeight = getHeight()/(gameBoard.height);
-
-        g.setColor(Color.BLACK);
+        g.setColor(Color.WHITE);
+        g.fillRect(0,0,getWidth(),getHeight());
+        g.setColor(Color.GRAY);
         for (int i = 0; i < gameBoard.height; i++) {
             for (int j = 0; j < gameBoard.width; j++) {
                 if (i % 2 + j % 2 == 1) {
@@ -100,12 +103,15 @@ public class GameRenderer extends JPanel {
     public boolean mouseIsOverPiece(GamePiece gamePiece) {
         int pieceX = gamePiece.x * spaceWidth;
         int pieceY = gamePiece.y * spaceHeight;
-        int mouseX = MouseInfo.getPointerInfo().getLocation().x;
-        int mouseY = MouseInfo.getPointerInfo().getLocation().y;
-        System.out.println(mouseX+","+mouseY);
+
         boolean xInRange = mouseX > pieceX && mouseX < pieceX + spaceWidth;
         boolean yInRange = mouseY > pieceY && mouseY < pieceY + spaceHeight;
         return xInRange && yInRange;
+    }
+
+    public void setMouseLocation(int mouseX, int mouseY) {
+        this.mouseX = mouseX;
+        this.mouseY = mouseY-25; //Weird required offset for menu bar up top
     }
 
     public void paintComponent(Graphics g) {
