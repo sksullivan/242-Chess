@@ -2,18 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4f917c5-68cd-40de-8001-01dede911939" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/Board.class" afterPath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/Board.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/ChessDriver.class" afterPath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/ChessDriver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/EventHandler.class" afterPath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/EventHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/GameRenderer.class" afterPath="$PROJECT_DIR$/out/production/242-Chess2/com/sks/chess/GameRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/242-Chess2.iml" afterPath="$PROJECT_DIR$/242-Chess2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sks/chess/Board.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sks/chess/EventHandler.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/EventHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sks/chess/Pawn.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/Pawn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/BoardTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/ChessException/InvalidGamePieceLocationException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/King.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/KnightMoveSpecifierTest.java" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Bishop.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Board.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\ChessDriver.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\EventHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\GamePiece.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\GamePieceMoveSpecifier.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\GameRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\InvalidMoveDirectionCombinationException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Knight.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\KnightMoveSpecifier.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\LinearMoveSpecifier.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Queen.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Rook.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Board.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\ChessDriver.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/242-Chess2/test/com/sks/chess/LinearMoveSpecifierTest.class" afterPath="$PROJECT_DIR$/out/production/242-Chess2/test/com/sks/chess/LinearMoveSpecifierTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/sks/chess/LinearMoveSpecifierTest.java" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/LinearMoveSpecifierTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Bishop.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Bishop.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\EventHandler.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\GamePiece.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\GamePieceMoveSpecifier.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\GameRenderer.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\InvalidMoveDirectionCombinationException.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/ChessException/InvalidMoveDirectionCombinationException.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Knight.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\KnightMoveSpecifier.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\LinearMoveSpecifier.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Pawn.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Pawn.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Queen.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Queen.java" />
+      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Rook.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Rook.java" />
     </list>
     <ignored path="242-Chess2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,69 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Bishop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Bishop.java">
+      <file leaf-file-name="GameRenderer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="750">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pawn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Pawn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChessDriver.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78640777" vertical-offset="0" max-vertical-offset="615">
-              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="630">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameRenderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="2070">
-              <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinearMoveSpecifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/LinearMoveSpecifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1170">
-              <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.7046632" vertical-offset="459" max-vertical-offset="3111">
+              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,10 +76,56 @@
         </entry>
       </file>
       <file leaf-file-name="Knight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Knight.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="630">
-              <caret line="17" column="95" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="816">
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#611#629#0" expanded="true" />
+                <element signature="e#1531#1555#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KnightMoveSpecifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamePieceMoveSpecifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChessDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="952">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinearMoveSpecifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1241">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,12 +133,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Rook.java">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="690">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="1207">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamePiece.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="748">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="986">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,31 +184,46 @@
         <option value="$PROJECT_DIR$/src/com/sks/Chess/GamePiece.java" />
         <option value="$PROJECT_DIR$/src/com/sks/Chess/GamePieceMoveSpecifier.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/InvalidMoveDirectionCombinationException.java" />
-        <option value="$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GamePieceMoveSpecifierTest.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/LinearMoveSpecifierTest.java" />
-        <option value="$PROJECT_DIR$/src/com/sks/chess/GamePiece.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/LinearMoveSpecifier.java" />
         <option value="$PROJECT_DIR$/src/test/com/sks/chess/LinearMoveSpecifierTest.java" />
-        <option value="$PROJECT_DIR$/src/com/sks/chess/KnightMoveSpecifier.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GamePieceMoveSpecifier.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/Queen.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/Knight.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/Rook.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/Bishop.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GamePiece.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/King.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/KnightMoveSpecifier.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/KnightMoveSpecifierTest.java" />
+        <option value="$PROJECT_DIR$/src/test/com/sks/chess/KnightMoveSpecifierTest.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/InvalidGamePieceLocationException.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/Board.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java" />
-        <option value="$PROJECT_DIR$/src/com/sks/chess/Pawn.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/Pawn.java" />
+        <option value="$PROJECT_DIR$/src/test/com/sks/chess/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="22" />
-    <option name="width" value="1436" />
-    <option name="height" value="878" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -176,7 +232,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -207,7 +263,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="242-Chess" />
+              <option name="myItemId" value="242-Chess2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,7 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="242-Chess" />
+              <option name="myItemId" value="242-Chess2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -231,7 +287,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="242-Chess" />
+              <option name="myItemId" value="242-Chess2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -242,22 +298,8 @@
               <option name="myItemId" value="chess" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="242-Chess2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="242-Chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="white" />
+              <option name="myItemId" value="GUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,15 +309,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="242-Chess" />
+              <option name="myItemId" value="242-Chess2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="black" />
+              <option name="myItemId" value="chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameLogic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="242-Chess2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="242-Chess2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameLogic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MoveSpecifier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="242-Chess2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="242-Chess2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameLogic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GamePiece" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="242-Chess2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="242-Chess2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameLogic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChessException" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,19 +432,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.sks.chess" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="org.junit.Test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Development\git\242-Chess2\src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.Test" />
+      <recent name="org.junit.Test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Development\git\242-Chess2\images\white" />
       <recent name="D:\Development\git\242-Chess2\images\black" />
       <recent name="D:\Development\git\242-Chess2\images" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.sks.chess" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ChessDriver">
@@ -352,10 +478,137 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="false" name="KnightMoveSpecifierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.com.sks.chess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="242-Chess2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.com.sks.chess" />
+      <option name="MAIN_CLASS_NAME" value="test.com.sks.chess.KnightMoveSpecifierTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.com.sks.chess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="242-Chess2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.com.sks.chess" />
+      <option name="MAIN_CLASS_NAME" value="test.com.sks.chess.BoardTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test.com.sks.chess in 242-Chess2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.com.sks.chess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="242-Chess2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.com.sks.chess" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -379,19 +632,6 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -408,6 +648,12 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -419,6 +665,11 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -464,50 +715,9 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="false" name="ChessDriver" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.sks.chess.ChessDriver" />
+      <option name="MAIN_CLASS_NAME" value="com.sks.chess.GUI.ChessDriver" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -528,13 +738,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ChessDriver" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.LinearMoveSpecifierTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.KnightMoveSpecifierTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.test.com.sks.chess in 242-Chess2" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LinearMoveSpecifierTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.test.com.sks.chess in 242-Chess2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LinearMoveSpecifierTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.KnightMoveSpecifierTest" />
       </list>
     </recent_temporary>
   </component>
@@ -552,33 +768,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1436" height="878" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39802226" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880098" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39802226" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -608,45 +824,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="2070">
-          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/LinearMoveSpecifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1170">
-          <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Knight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="630">
-          <caret line="17" column="95" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Rook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="690">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Bishop.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="750">
           <caret line="36" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="36" selection-end-column="13" />
@@ -656,17 +834,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Pawn.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Pawn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="570">
           <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
@@ -674,17 +854,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Knight.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="630">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#611#629#0" expanded="true" />
+            <element signature="e#1531#1555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Rook.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Rook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="735">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
@@ -692,7 +876,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="646">
           <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
@@ -700,7 +884,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2244">
           <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
@@ -710,17 +894,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/EventHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="544">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="663">
           <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
@@ -730,7 +916,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePiece.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="561">
           <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
@@ -740,7 +926,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Queen.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
@@ -750,7 +936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Rook.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Rook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -758,24 +944,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePieceMoveSpecifier.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Knight.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="714">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#611#629#0" expanded="true" />
+            <element signature="e#1531#1555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/LinearMoveSpecifier.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="413" max-vertical-offset="1326">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
@@ -785,7 +975,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
           <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
@@ -793,7 +983,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1195" max-vertical-offset="2023">
           <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
@@ -803,7 +993,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="544">
           <caret line="24" column="129" selection-start-line="24" selection-start-column="129" selection-end-line="24" selection-end-column="129" />
@@ -813,7 +1003,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePiece.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="561">
           <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
@@ -823,7 +1013,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Queen.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="816">
           <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
@@ -833,21 +1023,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePieceMoveSpecifier.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/KnightMoveSpecifier.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="663">
           <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/LinearMoveSpecifier.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -864,7 +1054,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
@@ -872,7 +1062,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="238">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
@@ -882,7 +1072,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePiece.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -892,7 +1082,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePieceMoveSpecifier.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1258">
           <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
@@ -909,52 +1099,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53212523" vertical-offset="0" max-vertical-offset="607">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/KnightMoveSpecifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePiece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/InvalidMoveDirectionCombinationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/sks/chess/LinearMoveSpecifierTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="663">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GamePieceMoveSpecifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22405271" vertical-offset="0" max-vertical-offset="607">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Queen.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5601318" vertical-offset="0" max-vertical-offset="607">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
@@ -964,7 +1109,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Rook.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Rook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
@@ -977,81 +1122,177 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Knight.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="630">
-          <caret line="17" column="95" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="918">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/EventHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/ChessException/InvalidMoveDirectionCombinationException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61165047" vertical-offset="0" max-vertical-offset="515">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/ChessException/InvalidGamePieceLocationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19572368" vertical-offset="0" max-vertical-offset="608">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/sks/chess/LinearMoveSpecifierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="663">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="782">
+          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#502#0" expanded="true" />
+            <element signature="e#577#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Pawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="1309">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/sks/chess/KnightMoveSpecifierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="731">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/sks/chess/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3700658" vertical-offset="0" max-vertical-offset="969">
+          <caret line="56" column="85" selection-start-line="56" selection-start-column="85" selection-end-line="56" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Bishop.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="750">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="1207">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="2070">
-          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="986">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/LinearMoveSpecifier.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1170">
-          <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/Pawn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/ChessDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78640777" vertical-offset="0" max-vertical-offset="615">
-          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="952">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="816">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#611#629#0" expanded="true" />
+            <element signature="e#1531#1555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7046632" vertical-offset="459" max-vertical-offset="3111">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

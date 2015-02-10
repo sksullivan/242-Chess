@@ -1,9 +1,9 @@
-package com.sks.chess;
+package com.sks.chess.GameLogic.GamePiece;
 
+import com.sks.chess.GameLogic.Board;
+import com.sks.chess.GameLogic.ChessException.InvalidMoveDirectionCombinationException;
+import com.sks.chess.GameLogic.MoveSpecifier.LinearMoveSpecifier;
 import com.sun.javafx.scene.traversal.Direction;
-import javafx.util.Pair;
-
-import java.util.ArrayList;
 
 public class Queen extends Rook {
 

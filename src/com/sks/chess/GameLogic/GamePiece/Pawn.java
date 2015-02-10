@@ -1,5 +1,9 @@
-package com.sks.chess;
+package com.sks.chess.GameLogic.GamePiece;
 
+import com.sks.chess.GameLogic.Board;
+import com.sks.chess.GameLogic.MoveSpecifier.GamePieceMoveSpecifier;
+import com.sks.chess.GameLogic.ChessException.InvalidMoveDirectionCombinationException;
+import com.sks.chess.GameLogic.MoveSpecifier.LinearMoveSpecifier;
 import com.sun.javafx.scene.traversal.Direction;
 import javafx.util.Pair;
 
@@ -28,7 +32,7 @@ public class Pawn extends GamePiece {
     }
 
     public boolean isOnHomeRow() {
-        return y == board.height - 2 || y == 1;
+        return y == board.getHeight() - 2 || y == 1;
     }
 
     public void addSingleAndDoubleMoves(ArrayList<Pair<Integer, Integer>> validMoves) {

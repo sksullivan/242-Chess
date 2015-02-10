@@ -1,12 +1,14 @@
-package com.sks.chess;
+package com.sks.chess.GameLogic.GamePiece;
 
+import com.sks.chess.GameLogic.Board;
+import com.sks.chess.GameLogic.MoveSpecifier.GamePieceMoveSpecifier;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
 
 public abstract class GamePiece {
-    int x, y;
-    boolean isWhite;
+    protected int x, y;
+    public boolean isWhite;
 
     Board board;
     ArrayList<GamePieceMoveSpecifier> moveSpecifiers;
@@ -19,10 +21,23 @@ public abstract class GamePiece {
         this.board = board;
     }
 
+    public void moveTo(Pair<Integer,Integer> location) {
+        x = location.getKey();
+        y = location.getValue();
+    }
+
     public abstract ArrayList<Pair<Integer,Integer>> getValidMoveDestinations();
 
     public String toString() {
         String rawClassName = getClass().toString();
         return rawClassName.substring(rawClassName.lastIndexOf('.')+1,rawClassName.length());
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

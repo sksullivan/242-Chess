@@ -1,21 +1,23 @@
-package com.sks.chess;
+package com.sks.chess.GameLogic.GamePiece;
 
+import com.sks.chess.GameLogic.Board;
+import com.sks.chess.GameLogic.MoveSpecifier.GamePieceMoveSpecifier;
+import com.sks.chess.GameLogic.MoveSpecifier.LinearMoveSpecifier;
 import com.sun.javafx.scene.traversal.Direction;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
 
-public class Bishop extends GamePiece {
-    public Bishop(int x, int y, boolean isWhite, Board gameBoard) {
+/**
+ * Created by them on 2/7/2015.
+ */
+public class Rook extends GamePiece {
+    public Rook(int x, int y, boolean isWhite, Board gameBoard) {
         super(x,y,isWhite, gameBoard);
-        try {
-            moveSpecifiers.add(new LinearMoveSpecifier(Direction.UP, Direction.LEFT, -1));
-            moveSpecifiers.add(new LinearMoveSpecifier(Direction.DOWN, Direction.LEFT, -1));
-            moveSpecifiers.add(new LinearMoveSpecifier(Direction.UP, Direction.RIGHT, -1));
-            moveSpecifiers.add(new LinearMoveSpecifier(Direction.DOWN, Direction.RIGHT, -1));
-        } catch (InvalidMoveDirectionCombinationException combinationException) {
-            System.out.println("Specifiers set up wrong.");
-        }
+        moveSpecifiers.add(new LinearMoveSpecifier(Direction.UP,-1));
+        moveSpecifiers.add(new LinearMoveSpecifier(Direction.DOWN,-1));
+        moveSpecifiers.add(new LinearMoveSpecifier(Direction.LEFT,-1));
+        moveSpecifiers.add(new LinearMoveSpecifier(Direction.RIGHT,-1));
     }
 
     @Override

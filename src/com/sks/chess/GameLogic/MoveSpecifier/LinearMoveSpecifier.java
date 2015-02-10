@@ -1,11 +1,11 @@
-package com.sks.chess;
+package com.sks.chess.GameLogic.MoveSpecifier;
 
+import com.sks.chess.GameLogic.ChessException.InvalidMoveDirectionCombinationException;
 import com.sun.javafx.scene.traversal.Direction;
 import javafx.util.Pair;
 
 public class LinearMoveSpecifier extends GamePieceMoveSpecifier {
     private int distance;
-    private Pair<Integer,Integer> lastGeneratedMove;
 
     private Direction cardinalDirection, secondaryDirection;
 
@@ -26,11 +26,6 @@ public class LinearMoveSpecifier extends GamePieceMoveSpecifier {
         this.secondaryDirection = null;
         this.distance = distance;
         lastGeneratedMove = null;
-    }
-
-    public void reset() {
-        lastGeneratedMove = null;
-        generatedMoves = 0;
     }
 
     public Pair<Integer,Integer> sequentiallyGenerateMovesFromOrigin(Pair<Integer,Integer> origin) {

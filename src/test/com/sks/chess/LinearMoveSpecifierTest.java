@@ -1,13 +1,11 @@
 package test.com.sks.chess;
 
-import com.sks.chess.InvalidMoveDirectionCombinationException;
-import com.sks.chess.LinearMoveSpecifier;
+import com.sks.chess.GameLogic.ChessException.InvalidMoveDirectionCombinationException;
+import com.sks.chess.GameLogic.MoveSpecifier.LinearMoveSpecifier;
 import com.sun.javafx.scene.traversal.Direction;
 import javafx.util.Pair;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.lang.annotation.Annotation;
 
 import static org.junit.Assert.*;
 

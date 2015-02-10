@@ -18,6 +18,4 @@ public class GamePieceTest {
     public void testGetValidMoveDestinations() throws Exception {
         //TODO: Test goes here...
     }
-
-
 }
