@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public abstract class GamePiece {
     protected int x, y;
-    public boolean isWhite;
+    public boolean isWhite, isInPlay;
 
     Board board;
     ArrayList<GamePieceMoveSpecifier> moveSpecifiers;
@@ -19,6 +19,7 @@ public abstract class GamePiece {
         this.isWhite = isWhite;
         moveSpecifiers = new ArrayList<GamePieceMoveSpecifier>();
         this.board = board;
+        isInPlay = true;
     }
 
     public void moveTo(Pair<Integer,Integer> location) {
@@ -39,5 +40,9 @@ public abstract class GamePiece {
 
     public int getY() {
         return y;
+    }
+
+    public Pair<Integer,Integer> getLocation() {
+        return new Pair<Integer, Integer>(getX(),getY());
     }
 }

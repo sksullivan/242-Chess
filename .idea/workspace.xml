@@ -2,43 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4f917c5-68cd-40de-8001-01dede911939" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/BoardTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/ChessException/InvalidGamePieceLocationException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/King.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/KnightMoveSpecifierTest.java" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Bishop.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Board.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\ChessDriver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\EventHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\GamePiece.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\GamePieceMoveSpecifier.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\GameRenderer.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\InvalidMoveDirectionCombinationException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Knight.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\KnightMoveSpecifier.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\LinearMoveSpecifier.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Queen.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\out\production\242-Chess2\com\sks\chess\Rook.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Board.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\ChessDriver.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/242-Chess2/test/com/sks/chess/LinearMoveSpecifierTest.class" afterPath="$PROJECT_DIR$/out/production/242-Chess2/test/com/sks/chess/LinearMoveSpecifierTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/sks/chess/LinearMoveSpecifierTest.java" afterPath="$PROJECT_DIR$/src/test/com/sks/chess/LinearMoveSpecifierTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/them.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Bishop.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Bishop.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\EventHandler.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\GamePiece.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\GamePieceMoveSpecifier.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\GameRenderer.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\InvalidMoveDirectionCombinationException.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/ChessException/InvalidMoveDirectionCombinationException.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Knight.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\KnightMoveSpecifier.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\LinearMoveSpecifier.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Pawn.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Pawn.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Queen.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Queen.java" />
-      <change type="MOVED" beforePath="D:\Development\git\242-Chess2\src\com\sks\chess\Rook.java" afterPath="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Rook.java" />
     </list>
     <ignored path="242-Chess2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,93 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameRenderer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameRenderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7046632" vertical-offset="459" max-vertical-offset="3111">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Knight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="816">
-              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#611#629#0" expanded="true" />
-                <element signature="e#1531#1555#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KnightMoveSpecifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GamePieceMoveSpecifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChessDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="952">
-              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinearMoveSpecifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1241">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="1207">
-              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GamePiece.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="748">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2146" max-vertical-offset="3111">
+              <caret line="144" column="50" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,13 +45,43 @@
       <file leaf-file-name="EventHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="986">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16940789" vertical-offset="730" max-vertical-offset="2771">
+              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2381#2382#0" expanded="true" />
+                <element signature="e#2452#2453#0" expanded="true" />
+                <element signature="method#makeMove#0;class#Board#0" expanded="false" />
+                <element signature="method#getPiecesInPlay#0;class#Board#0" expanded="false" />
+                <element signature="e#5737#5748#0" expanded="true" />
+                <element signature="method#getPiecesOutOfPlay#0;class#Board#0" expanded="false" />
+                <element signature="e#6059#6070#0" expanded="true" />
+                <element signature="method#addGamePiece#0;class#Board#0" expanded="false" />
+                <element signature="method#isLocationOnBoard#0;class#Board#0" expanded="false" />
+                <element signature="method#getPieceAtLocationIfExtant#0;class#Board#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChessDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="952">
+              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,15 +122,16 @@
         <option value="$PROJECT_DIR$/src/com/sks/chess/Pawn.java" />
         <option value="$PROJECT_DIR$/src/test/com/sks/chess/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/test/com/sks/chess/GamePieceTest.java" />
-        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java" />
-        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/KnightMoveSpecifier.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java" />
         <option value="$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/King.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java" />
+        <option value="$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java" />
       </list>
     </option>
   </component>
@@ -249,6 +165,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -405,7 +322,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -728,12 +644,14 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="242-Chess2" />
       <envs />
+      <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -784,18 +702,44 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17916666" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39802226" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284055" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17916666" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39802226" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -815,7 +759,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java</url>
+          <line>41</line>
+          <properties class="com.sks.chess.GameLogic.Board" method="kingIsCheckmated" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -824,16 +776,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Bishop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="750">
-          <caret line="36" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Pawn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
@@ -860,10 +802,6 @@
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#611#629#0" expanded="true" />
-            <element signature="e#1531#1555#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -912,6 +850,16 @@
           <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="method#makeMove#0;class#Board#0" expanded="false" />
+            <element signature="method#getPiecesInPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#5737#5748#0" expanded="true" />
+            <element signature="method#getPiecesOutOfPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#6059#6070#0" expanded="true" />
+            <element signature="method#addGamePiece#0;class#Board#0" expanded="false" />
+            <element signature="method#isLocationOnBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#getPieceAtLocationIfExtant#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -957,10 +905,6 @@
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#611#629#0" expanded="true" />
-            <element signature="e#1531#1555#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -999,6 +943,16 @@
           <caret line="24" column="129" selection-start-line="24" selection-start-column="129" selection-end-line="24" selection-end-column="129" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="method#makeMove#0;class#Board#0" expanded="false" />
+            <element signature="method#getPiecesInPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#5737#5748#0" expanded="true" />
+            <element signature="method#getPiecesOutOfPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#6059#6070#0" expanded="true" />
+            <element signature="method#addGamePiece#0;class#Board#0" expanded="false" />
+            <element signature="method#isLocationOnBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#getPieceAtLocationIfExtant#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,6 +1022,16 @@
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="method#makeMove#0;class#Board#0" expanded="false" />
+            <element signature="method#getPiecesInPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#5737#5748#0" expanded="true" />
+            <element signature="method#getPiecesOutOfPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#6059#6070#0" expanded="true" />
+            <element signature="method#addGamePiece#0;class#Board#0" expanded="false" />
+            <element signature="method#isLocationOnBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#getPieceAtLocationIfExtant#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1122,23 +1086,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Bishop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="918">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/ChessException/InvalidMoveDirectionCombinationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#261#262#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1158,30 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="663">
           <caret line="20" column="9" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/King.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="782">
-          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#478#502#0" expanded="true" />
-            <element signature="e#577#601#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Pawn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="1309">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1206,10 +1136,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/King.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="782">
+          <caret line="23" column="194" selection-start-line="23" selection-start-column="194" selection-end-line="23" selection-end-column="194" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#502#0" expanded="true" />
+            <element signature="e#577#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/awt/EventDispatchThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.59375" vertical-offset="0" max-vertical-offset="4301">
+          <caret line="92" column="15" selection-start-line="92" selection-start-column="15" selection-end-line="92" selection-end-column="15" />
+          <folding>
+            <element signature="e#2191#2192#0" expanded="false" />
+            <element signature="e#2234#2235#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="782">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1218,32 +1171,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/LinearMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="1241">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Pawn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="1207">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="686" max-vertical-offset="1275">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="986">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1259,39 +1200,78 @@
     <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/MoveSpecifier/GamePieceMoveSpecifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="952">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Knight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="816">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#611#629#0" expanded="true" />
-            <element signature="e#1531#1555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/GameRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7046632" vertical-offset="459" max-vertical-offset="3111">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2146" max-vertical-offset="3111">
+          <caret line="144" column="50" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/GamePiece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="833">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/GamePiece/Bishop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="918">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1255#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GUI/ChessDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="952">
+          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sks/chess/GameLogic/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16940789" vertical-offset="730" max-vertical-offset="2771">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="method#makeMove#0;class#Board#0" expanded="false" />
+            <element signature="method#getPiecesInPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#5737#5748#0" expanded="true" />
+            <element signature="method#getPiecesOutOfPlay#0;class#Board#0" expanded="false" />
+            <element signature="e#6059#6070#0" expanded="true" />
+            <element signature="method#addGamePiece#0;class#Board#0" expanded="false" />
+            <element signature="method#isLocationOnBoard#0;class#Board#0" expanded="false" />
+            <element signature="method#getPieceAtLocationIfExtant#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
