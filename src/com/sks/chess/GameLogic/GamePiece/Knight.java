@@ -1,15 +1,12 @@
 package com.sks.chess.GameLogic.GamePiece;
 
 import com.sks.chess.GameLogic.Board;
-import com.sks.chess.GameLogic.MoveSpecifier.GamePieceMoveSpecifier;
-import com.sks.chess.GameLogic.MoveSpecifier.KnightMoveSpecifier;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.ListIterator;
 
-public class Knight extends GamePiece {
+public class Knight extends GenericGamePiece {
     public Knight(int x, int y, boolean isWhite, Board gameBoard) {
         super(x,y,isWhite,gameBoard);
     }

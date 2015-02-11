@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After; 
 
-public class GamePieceTest {
+public class GenericGamePieceTest {
 
     @Before
     public void before() throws Exception {

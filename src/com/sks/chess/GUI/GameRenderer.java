@@ -1,7 +1,7 @@
 package com.sks.chess.GUI;
 
 import com.sks.chess.GameLogic.Board;
-import com.sks.chess.GameLogic.GamePiece.GamePiece;
+import com.sks.chess.GameLogic.GamePiece.GenericGamePiece;
 import javafx.util.Pair;
 
 import javax.imageio.ImageIO;
@@ -16,16 +16,14 @@ import java.util.HashMap;
 public class GameRenderer extends JPanel {
     private int mouseX, mouseY;
     private Board gameBoard;
-    private HashMap<String,BufferedImage> whiteImageDictionary;
-    private HashMap<String,BufferedImage> blackImageDictionary;
-    private boolean shouldHighlightPiece, shouldHighlightMove;
-    private GamePiece selectedGamePiece;
+    private HashMap<String,BufferedImage> whiteImageDictionary, blackImageDictionary;
+    private GenericGamePiece selectedGamePiece;
     private Pair<Integer,Integer> selectedMove;
 
-    private int spaceWidth, spaceHeight, gamePieceImageOffset, selectedXIndex, selectedYIndex;
+    private int spaceWidth, spaceHeight, gamePieceImageOffset;
 
-    public GameRenderer(Board gameBoard) {
-        this.gameBoard = gameBoard;
+    public GameRenderer() {
+        this.gameBoard = null;
         whiteImageDictionary = new HashMap<String,BufferedImage>();
         blackImageDictionary = new HashMap<String,BufferedImage>();
         try {
@@ -34,8 +32,10 @@ public class GameRenderer extends JPanel {
             System.err.println("Could not load images.");
         }
         gamePieceImageOffset = 10;
-        shouldHighlightPiece = false;
-        shouldHighlightMove = false;
+    }
+
+    public void setBoard(Board gameBoard) {
+        this.gameBoard = gameBoard;
     }
 
     public void saveImageFromFileToDictionary(File imageFile, HashMap<String,BufferedImage> dictionary) throws IOException {
@@ -46,7 +46,7 @@ public class GameRenderer extends JPanel {
     }
 
     public void loadImagesFromDirectoryIntoDictionaries() throws IOException {
-        File whiteImagesDirectory = new File("images\\white");
+        File whiteImagesDirectory = new File("images//white");
         if (whiteImagesDirectory.isDirectory()) {
             for (File imageFile : whiteImagesDirectory.listFiles()) {
                 try {
@@ -57,7 +57,7 @@ public class GameRenderer extends JPanel {
             }
         }
 
-        File blackImagesDirectory = new File("images\\black");
+        File blackImagesDirectory = new File("images//black");
         if (blackImagesDirectory.isDirectory()) {
             for (File imageFile : blackImagesDirectory.listFiles()) {
                 try {
@@ -84,7 +84,7 @@ public class GameRenderer extends JPanel {
         }
     }
 
-    public void renderPiece(Graphics g, GamePiece gamePiece) {
+    public void renderPiece(Graphics g, GenericGamePiece gamePiece) {
         int imageX = gamePiece.getX() * spaceWidth + gamePieceImageOffset;
         int imageY = gamePiece.getY() * spaceHeight + gamePieceImageOffset;
         int imageHeight =  spaceHeight - 2 * gamePieceImageOffset;
@@ -112,7 +112,7 @@ public class GameRenderer extends JPanel {
         g.fillRect(moveX, moveY, spaceWidth, spaceHeight);
     }
 
-    public boolean mouseIsOverPiece(GamePiece gamePiece) {
+    public boolean mouseIsOverPiece(GenericGamePiece gamePiece) {
         int pieceX = gamePiece.getX() * spaceWidth;
         int pieceY = gamePiece.getY() * spaceHeight;
 
@@ -136,7 +136,7 @@ public class GameRenderer extends JPanel {
     }
 
     public void mouseClicked() {
-        for (GamePiece gamePiece : gameBoard.getPiecesInPlay()) {
+        for (GenericGamePiece gamePiece : gameBoard.getPiecesInPlay()) {
             if (mouseIsOverPiece(gamePiece) && gamePiece.isWhite == gameBoard.isWhitesTurn()) {
                 if (selectedGamePiece == gamePiece) {
                     selectedGamePiece = null;
@@ -161,8 +161,11 @@ public class GameRenderer extends JPanel {
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        if (gameBoard == null) {
+            return;
+        }
         renderBoard(g);
-        for (GamePiece gamePiece : gameBoard.getPiecesInPlay()) {
+        for (GenericGamePiece gamePiece : gameBoard.getPiecesInPlay()) {
             if (selectedGamePiece == gamePiece) {
                 ArrayList<Pair<Integer, Integer>> listOfMoves = gamePiece.getValidMoveDestinations();
                 for (Pair<Integer, Integer> move : listOfMoves) {
@@ -170,7 +173,7 @@ public class GameRenderer extends JPanel {
                 }
             }
         }
-        for (GamePiece gamePiece : gameBoard.getPiecesInPlay()) {
+        for (GenericGamePiece gamePiece : gameBoard.getPiecesInPlay()) {
             renderPiece(g, gamePiece);
         }
     }

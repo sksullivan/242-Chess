@@ -9,7 +9,7 @@ import javafx.util.Pair;
 
 import java.util.ArrayList;
 
-public class Bishop extends GamePiece {
+public class Bishop extends GenericGamePiece {
     public Bishop(int x, int y, boolean isWhite, Board gameBoard) {
         super(x,y,isWhite, gameBoard);
         try {
@@ -27,7 +27,7 @@ public class Bishop extends GamePiece {
         ArrayList<Pair<Integer, Integer>> validMoves = new ArrayList<Pair<Integer, Integer>>();
         for (GamePieceMoveSpecifier specifier : moveSpecifiers) {
             Pair<Integer,Integer> generatedMove = specifier.sequentiallyGenerateMovesFromOrigin(new Pair<Integer,Integer>(x,y));
-            GamePiece pieceAtDestination = board.getPieceAtLocationIfExtant(generatedMove);
+            GenericGamePiece pieceAtDestination = board.getPieceAtLocationIfExtant(generatedMove);
             while (board.isLocationOnBoard(generatedMove)) {
                 if (pieceAtDestination != null && pieceAtDestination.isWhite == this.isWhite) {
                     break;

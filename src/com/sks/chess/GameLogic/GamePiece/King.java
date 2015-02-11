@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Created by them on 2/9/2015.
  */
-public class King extends GamePiece {
+public class King extends GenericGamePiece {
 
     public King(int x, int y, boolean isWhite, Board board) {
         super(x, y, isWhite, board);

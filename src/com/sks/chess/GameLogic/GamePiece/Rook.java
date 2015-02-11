@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  * Created by them on 2/7/2015.
  */
-public class Rook extends GamePiece {
+public class Rook extends GenericGamePiece {
     public Rook(int x, int y, boolean isWhite, Board gameBoard) {
         super(x,y,isWhite, gameBoard);
         moveSpecifiers.add(new LinearMoveSpecifier(Direction.UP,-1));
@@ -25,7 +25,7 @@ public class Rook extends GamePiece {
         ArrayList<Pair<Integer, Integer>> validMoves = new ArrayList<Pair<Integer, Integer>>();
         for (GamePieceMoveSpecifier specifier : moveSpecifiers) {
             Pair<Integer,Integer> generatedMove = specifier.sequentiallyGenerateMovesFromOrigin(new Pair<Integer,Integer>(x,y));
-            GamePiece pieceAtDestination = board.getPieceAtLocationIfExtant(generatedMove);
+            GenericGamePiece pieceAtDestination = board.getPieceAtLocationIfExtant(generatedMove);
             while (board.isLocationOnBoard(generatedMove)) {
                 if (pieceAtDestination != null && pieceAtDestination.isWhite == this.isWhite) {
                     break;

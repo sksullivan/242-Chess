@@ -12,12 +12,12 @@ import java.util.ArrayList;
 /**
  * Created by them on 2/8/2015.
  */
-public class Pawn extends GamePiece {
+public class Pawn extends GenericGamePiece {
 
     public Pawn(int x, int y, boolean isWhite, Board board) {
         super(x,y,isWhite,board);
         try {
-            if (y == 1) {
+            if (isWhite) {
                 moveSpecifiers.add(new LinearMoveSpecifier(Direction.DOWN,2));
                 moveSpecifiers.add(new LinearMoveSpecifier(Direction.LEFT, Direction.DOWN, 1));
                 moveSpecifiers.add(new LinearMoveSpecifier(Direction.RIGHT, Direction.DOWN, 1));
@@ -39,8 +39,8 @@ public class Pawn extends GamePiece {
         GamePieceMoveSpecifier specifier = moveSpecifiers.get(0);
         Pair<Integer,Integer> oneSquareGeneratedMove = specifier.sequentiallyGenerateMovesFromOrigin(new Pair<Integer,Integer>(x,y));
         Pair<Integer,Integer> twoSquareGeneratedMove = specifier.sequentiallyGenerateMovesFromOrigin(new Pair<Integer,Integer>(x,y));
-        GamePiece oneSquareGamePiece = board.getPieceAtLocationIfExtant(oneSquareGeneratedMove);
-        GamePiece twoSquareGamePiece = board.getPieceAtLocationIfExtant(twoSquareGeneratedMove);
+        GenericGamePiece oneSquareGamePiece = board.getPieceAtLocationIfExtant(oneSquareGeneratedMove);
+        GenericGamePiece twoSquareGamePiece = board.getPieceAtLocationIfExtant(twoSquareGeneratedMove);
         if (oneSquareGamePiece == null) {
             validMoves.add(oneSquareGeneratedMove);
             if (twoSquareGamePiece == null && isOnHomeRow()) {
@@ -50,7 +50,7 @@ public class Pawn extends GamePiece {
         specifier.reset();
     }
 
-    public void addDiagonalMoves(ArrayList<Pair<Integer, Integer>> validMoves) {
+    public void addDiagonalMovesConditionally(ArrayList<Pair<Integer, Integer>> validMoves) {
         for (int i = 1; i < 3; i++) {
             GamePieceMoveSpecifier diagonalMoveSpecifier = moveSpecifiers.get(i);
             Pair<Integer, Integer> diagonalGeneratedMove = diagonalMoveSpecifier.sequentiallyGenerateMovesFromOrigin(new Pair<Integer, Integer>(x, y));
@@ -61,11 +61,27 @@ public class Pawn extends GamePiece {
         }
     }
 
+    public void addDiagonalMovesUnconditionally(ArrayList<Pair<Integer, Integer>> validMoves) {
+        for (int i = 1; i < 3; i++) {
+            GamePieceMoveSpecifier diagonalMoveSpecifier = moveSpecifiers.get(i);
+            Pair<Integer, Integer> diagonalGeneratedMove = diagonalMoveSpecifier.sequentiallyGenerateMovesFromOrigin(new Pair<Integer, Integer>(x, y));
+            validMoves.add(diagonalGeneratedMove);
+            diagonalMoveSpecifier.reset();
+        }
+    }
+
+    @Override
+    public ArrayList<Pair<Integer, Integer>> getValidCaptureDestinations() {
+        ArrayList<Pair<Integer, Integer>> validMoves = new ArrayList<Pair<Integer, Integer>>();
+        addDiagonalMovesUnconditionally(validMoves);
+        return validMoves;
+    }
+
     @Override
     public ArrayList<Pair<Integer, Integer>> getValidMoveDestinations() {
         ArrayList<Pair<Integer, Integer>> validMoves = new ArrayList<Pair<Integer, Integer>>();
         addSingleAndDoubleMoves(validMoves);
-        addDiagonalMoves(validMoves);
+        addDiagonalMovesConditionally(validMoves);
         return validMoves;
     }
 }

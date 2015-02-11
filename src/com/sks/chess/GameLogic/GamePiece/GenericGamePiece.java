@@ -6,14 +6,14 @@ import javafx.util.Pair;
 
 import java.util.ArrayList;
 
-public abstract class GamePiece {
+public abstract class GenericGamePiece {
     protected int x, y;
     public boolean isWhite, isInPlay;
 
     Board board;
     ArrayList<GamePieceMoveSpecifier> moveSpecifiers;
 
-    public GamePiece(int x, int y, boolean isWhite, Board board) {
+    public GenericGamePiece(int x, int y, boolean isWhite, Board board) {
         this.x = x;
         this.y = y;
         this.isWhite = isWhite;
@@ -28,6 +28,10 @@ public abstract class GamePiece {
     }
 
     public abstract ArrayList<Pair<Integer,Integer>> getValidMoveDestinations();
+
+    public ArrayList<Pair<Integer,Integer>> getValidCaptureDestinations() {
+        return getValidMoveDestinations();
+    };
 
     public String toString() {
         String rawClassName = getClass().toString();

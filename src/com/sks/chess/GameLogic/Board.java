@@ -1,28 +1,29 @@
 package com.sks.chess.GameLogic;
 
-import com.sks.chess.GameLogic.GamePiece.GamePiece;
+import com.sks.chess.GUI.EventHandler;
+import com.sks.chess.GameLogic.GamePiece.GenericGamePiece;
 import com.sks.chess.GameLogic.ChessException.InvalidGamePieceLocationException;
 import com.sks.chess.GameLogic.GamePiece.King;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
-import java.util.IntSummaryStatistics;
 
 public class Board {
     private boolean isWhitesTurn;
     private int width, height;
-    private ArrayList<GamePiece> gamePieces;
+    private ArrayList<GenericGamePiece> gamePieces;
+    private EventHandler eventHandler;
 
-
-    public Board(int width, int height) {
+    public Board(int width, int height, EventHandler eventHandler) {
         this.width = width;
         this.height = height;
-        gamePieces = new ArrayList<GamePiece>();
+        gamePieces = new ArrayList<GenericGamePiece>();
         isWhitesTurn = true;
+        this.eventHandler = eventHandler;
     }
 
     private King getKing(boolean isWhite) {
-        for (GamePiece gamePiece : getPiecesInPlay()) {
+        for (GenericGamePiece gamePiece : getPiecesInPlay()) {
             if (gamePiece.toString().equals("King")) {
                 if (gamePiece.isWhite == isWhite) {
                     return (King)gamePiece;
@@ -32,35 +33,52 @@ public class Board {
         return null;
     }
 
-    private void checkGameEndState() {
+    public void checkGameEndState() {
         King whiteKing = getKing(true);
         King blackKing = getKing(false);
-        kingIsCheckmated(whiteKing);
-        //kingIsCheckmated(blackKing);
+        if (kingIsCheckmated(whiteKing) || kingIsCheckmated(blackKing) || isStalemate()) {
+            if (eventHandler != null) { // Include null check for running tests, which are headless
+                eventHandler.endGame();
+            }
+        }
     }
 
     public boolean kingIsCheckmated(King king) {
-        String team = king.isWhite ? "White" : "Black";
+        String winningTeam = king.isWhite ? "Black" : "White"; // We're determining if the king in question loses, so here we find the opponent's team
+        String myTeam = !king.isWhite ? "Black" : "White";
         if (kingInCheck(king)) { // King is currently in check
-            if (!kingHasNonSelfCheckPlacingMove(king)) {
+            if (!kingCanMoveOutOfCheck(king)) {
                 if (!kingsTeamCanBlockCheck(king)) {
-                    System.out.println("Ckeckmate. "+team+" wins.");
+                    System.out.println("Ckeckmate. "+winningTeam+" wins.");
+                    return true;
                 } else {
-                    System.out.println(team+" team can block check.");
+                    System.out.println(myTeam+" team can block check.");
                 }
             } else {
-                System.out.println(team+" king can move out of check.");
-            }
-        } else {
-            if (!kingHasNonSelfCheckPlacingMove(king) && !kingsTeamHasRemainingMoves(king)) {
-                System.out.println("Stalemate.");
+                System.out.println(myTeam+" king can move out of check.");
             }
         }
         return false;
     }
 
-    public boolean kingsTeamHasRemainingMoves(King king) {
-        for (GamePiece gamePiece : getPiecesInPlay()) {
+    public boolean isStalemate() {
+        if (!kingInCheck(getKing(true))) { // King is currently in check
+            if (!kingCanMoveOutOfCheck(getKing(true)) && !kingsTeamHasRemainingMoves(getKing(true))) {
+                System.out.println("Stalemate.");
+                return true;
+            }
+        }
+        if (!kingInCheck(getKing(false))) { // King is currently in check
+            if (!kingCanMoveOutOfCheck(getKing(false)) && !kingsTeamHasRemainingMoves(getKing(false))) {
+                System.out.println("Stalemate.");
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean kingsTeamHasRemainingMoves(King king) {
+        for (GenericGamePiece gamePiece : getPiecesInPlay()) {
             if (gamePiece.isWhite == king.isWhite && !gamePiece.toString().equals("King")) {
                 for (Pair<Integer, Integer> teamMove : gamePiece.getValidMoveDestinations()) {
                     return true;
@@ -69,10 +87,12 @@ public class Board {
         }
         return false;
     }
-    public boolean kingInCheck(King king) {
+
+    private boolean kingInCheck(King king) {
         return locationPutsKingInCheck(king,king.getLocation());
     }
-    public boolean kingHasNonSelfCheckPlacingMove(King king) {
+
+    private boolean kingCanMoveOutOfCheck(King king) {
         int validMoves = king.getValidMoveDestinations().size();
         for (Pair<Integer, Integer> move : king.getValidMoveDestinations()) {
             if (locationPutsKingInCheck(king, move)) {
@@ -81,16 +101,16 @@ public class Board {
         }
         return validMoves > 0;
     }
-    public boolean locationPutsKingInCheck(King king, Pair<Integer,Integer> location) {
+
+    private boolean locationPutsKingInCheck(King king, Pair<Integer,Integer> location) {
         Pair<Integer,Integer> oldLocation = king.getLocation();
         if (locationInEnemyReach(location,king.isWhite)) {
             return true;
         }
-        GamePiece captureableEnemy = getPieceAtLocationIfExtant(location);
-        if (captureableEnemy == null) {
-            return false;
+        GenericGamePiece captureableEnemy = getPieceAtLocationIfExtant(location);
+        if (captureableEnemy != null) {
+            captureableEnemy.isInPlay = false;
         }
-        captureableEnemy.isInPlay = false;
         king.moveTo(location);
         boolean isInCheck = true;
         if (locationInEnemyReach(king.getLocation(), king.isWhite)) {
@@ -99,13 +119,16 @@ public class Board {
             isInCheck = false;
         }
         king.moveTo(oldLocation);
-        captureableEnemy.isInPlay = true;
+        if (captureableEnemy != null) {
+            captureableEnemy.isInPlay = true;
+        }
         return isInCheck;
     }
-    public boolean locationInEnemyReach(Pair<Integer,Integer> location, boolean isWhite) {
-        for (GamePiece gamePiece : getPiecesInPlay()) {
+
+    private boolean locationInEnemyReach(Pair<Integer,Integer> location, boolean isWhite) {
+        for (GenericGamePiece gamePiece : getPiecesInPlay()) {
             if (gamePiece.isWhite != isWhite) {
-                for (Pair<Integer, Integer> enemyMove : gamePiece.getValidMoveDestinations()) {
+                for (Pair<Integer, Integer> enemyMove : gamePiece.getValidCaptureDestinations()) {
                     if (enemyMove.equals(location)) {
                         return true;
                     }
@@ -114,13 +137,14 @@ public class Board {
         }
         return false;
     }
-    public boolean kingsTeamCanBlockCheck(King king) {
+
+    private boolean kingsTeamCanBlockCheck(King king) {
         boolean canExitCheck = false;
-        for (GamePiece gamePiece : getPiecesInPlay()) {
+        for (GenericGamePiece gamePiece : getPiecesInPlay()) {
             if (gamePiece.isWhite == king.isWhite) {
                 for (Pair<Integer,Integer> move : gamePiece.getValidMoveDestinations()) {
                     Pair<Integer,Integer> oldLocation = gamePiece.getLocation();
-                    GamePiece destinationPiece = getPieceAtLocationIfExtant(move);
+                    GenericGamePiece destinationPiece = getPieceAtLocationIfExtant(move);
                     if (destinationPiece != null) {
                         destinationPiece.isInPlay = false;
                     }
@@ -138,12 +162,35 @@ public class Board {
         return canExitCheck;
     }
 
-    public void makeMove(GamePiece gamePiece, Pair<Integer,Integer> move) {
-        GamePiece destinationPiece = getPieceAtLocationIfExtant(move);
+    public void makeMove(GenericGamePiece gamePiece, Pair<Integer,Integer> move) {
+        boolean movingWhiteKingPutsWhiteKingIntoCheck = gamePiece.toString().equals("King") && isWhitesTurn() && locationPutsKingInCheck((King)gamePiece,move);
+        boolean movingBlackKingPutsBlackKingIntoCheck = gamePiece.toString().equals("King") && !isWhitesTurn() && locationPutsKingInCheck((King)gamePiece,move);
+
+        if (movingBlackKingPutsBlackKingIntoCheck || movingWhiteKingPutsWhiteKingIntoCheck) {
+            System.out.println("Can't put king in check.");
+            return;
+        }
+
+        Pair<Integer,Integer> oldLocation = gamePiece.getLocation();
+        GenericGamePiece destinationPiece = getPieceAtLocationIfExtant(move);
         if (destinationPiece != null) {
             destinationPiece.isInPlay = false;
         }
         gamePiece.moveTo(move);
+
+        boolean movingOtherPiecePutsWhiteKingIntoCheck = isWhitesTurn() && locationPutsKingInCheck(getKing(true),getKing(true).getLocation());
+        boolean movingOtherPiecePutsBlackKingIntoCheck = !isWhitesTurn() && locationPutsKingInCheck(getKing(false),getKing(false).getLocation());
+
+
+        if (movingOtherPiecePutsBlackKingIntoCheck || movingOtherPiecePutsWhiteKingIntoCheck) {
+            if (destinationPiece != null) {
+                destinationPiece.isInPlay = true;
+            }
+            gamePiece.moveTo(oldLocation);
+            System.out.println("Can't put king in check.");
+            return;
+        }
+
         isWhitesTurn = !isWhitesTurn;
         checkGameEndState();
     }
@@ -160,9 +207,9 @@ public class Board {
         return height;
     }
 
-    public ArrayList<GamePiece> getPiecesInPlay() {
-        ArrayList<GamePiece> piecesInPlay = new ArrayList<GamePiece>();
-        for (GamePiece gamePiece : gamePieces) {
+    public ArrayList<GenericGamePiece> getPiecesInPlay() {
+        ArrayList<GenericGamePiece> piecesInPlay = new ArrayList<GenericGamePiece>();
+        for (GenericGamePiece gamePiece : gamePieces) {
             if (gamePiece.isInPlay) {
                 piecesInPlay.add(gamePiece);
             }
@@ -170,9 +217,9 @@ public class Board {
         return piecesInPlay;
     }
 
-    public ArrayList<GamePiece> getPiecesOutOfPlay() {
-        ArrayList<GamePiece> piecesOutOfPlay = new ArrayList<GamePiece>();
-        for (GamePiece gamePiece : gamePieces) {
+    public ArrayList<GenericGamePiece> getPiecesOutOfPlay() {
+        ArrayList<GenericGamePiece> piecesOutOfPlay = new ArrayList<GenericGamePiece>();
+        for (GenericGamePiece gamePiece : gamePieces) {
             if (!gamePiece.isInPlay) {
                 piecesOutOfPlay.add(gamePiece);
             }
@@ -180,7 +227,7 @@ public class Board {
         return piecesOutOfPlay;
     }
 
-    public void addGamePiece(GamePiece gamePiece) throws InvalidGamePieceLocationException {
+    public void addGamePiece(GenericGamePiece gamePiece) throws InvalidGamePieceLocationException {
         if (isLocationOnBoard(gamePiece.getLocation())) {
             gamePieces.add(gamePiece);
         } else {
@@ -192,11 +239,11 @@ public class Board {
         return location.getKey() >= 0 && location.getKey() < width && location.getValue() >= 0 && location.getValue() < height;
     }
 
-    public GamePiece getPieceAtLocationIfExtant(Pair<Integer,Integer> location) {
+    public GenericGamePiece getPieceAtLocationIfExtant(Pair<Integer,Integer> location) {
         if (!isLocationOnBoard(location)) {
             return null;
         }
-        for (GamePiece gamePiece : getPiecesInPlay()) {
+        for (GenericGamePiece gamePiece : getPiecesInPlay()) {
             if (gamePiece.getX() == location.getKey() && gamePiece.getY() == location.getValue()) {
                 return gamePiece;
             }
