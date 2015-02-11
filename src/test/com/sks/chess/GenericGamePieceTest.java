@@ -1,21 +1,20 @@
 package test.com.sks.chess; 
 
-import org.junit.Test; 
+import com.sks.chess.GameLogic.Board;
+import com.sks.chess.GameLogic.GamePiece.Pawn;
+import com.sks.chess.GameLogic.GamePiece.Rook;
+import javafx.util.Pair;
+import org.junit.Test;
 import org.junit.Before; 
-import org.junit.After; 
+import org.junit.After;
+
+import static org.junit.Assert.*;
 
 public class GenericGamePieceTest {
 
-    @Before
-    public void before() throws Exception {
-    }
-
-    @After
-    public void after() throws Exception {
-    }
-
     @Test
-    public void testGetValidMoveDestinations() throws Exception {
-        //TODO: Test goes here...
+    public void testToString() {
+        Rook rook = new Rook(0,0,false,null);
+        assertEquals(rook.toString(),"Rook");
     }
 }

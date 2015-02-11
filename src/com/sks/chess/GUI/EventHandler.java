@@ -36,7 +36,7 @@ public class EventHandler implements MouseMotionListener, MouseListener {
     }
 
     public void placeInitialGamePiecesOnBoard(Board gameBoard) throws InvalidGamePieceLocationException {
-        /*for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 8; i++) {
             gameBoard.addGamePiece(new Pawn(i,1,true,gameBoard));
             gameBoard.addGamePiece(new Pawn(i,6,false,gameBoard));
         }
@@ -57,14 +57,7 @@ public class EventHandler implements MouseMotionListener, MouseListener {
         gameBoard.addGamePiece(new King(4,7,false,gameBoard));
         gameBoard.addGamePiece(new Bishop(5,7,false,gameBoard));
         gameBoard.addGamePiece(new Knight(6,7,false,gameBoard));
-        gameBoard.addGamePiece(new Rook(7,7,false,gameBoard));*/
-        King whiteKing = new King(0, 0, true, gameBoard);
-        Rook blackRook = new Rook(7, 5, false, gameBoard);
-        gameBoard.addGamePiece(new King(7, 7, false, gameBoard));
-        gameBoard.addGamePiece(blackRook);
-        gameBoard.addGamePiece(new Rook(1, 7, false, gameBoard));
-
-        gameBoard.addGamePiece(whiteKing);
+        gameBoard.addGamePiece(new Rook(7,7,false,gameBoard));
     }
 
     @Override

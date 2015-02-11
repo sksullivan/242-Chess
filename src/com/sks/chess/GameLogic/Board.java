@@ -4,6 +4,7 @@ import com.sks.chess.GUI.EventHandler;
 import com.sks.chess.GameLogic.GamePiece.GenericGamePiece;
 import com.sks.chess.GameLogic.ChessException.InvalidGamePieceLocationException;
 import com.sks.chess.GameLogic.GamePiece.King;
+import com.sks.chess.GameLogic.MoveSpecifier.GamePieceMoveSpecifier;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
@@ -81,7 +82,9 @@ public class Board {
         for (GenericGamePiece gamePiece : getPiecesInPlay()) {
             if (gamePiece.isWhite == king.isWhite && !gamePiece.toString().equals("King")) {
                 for (Pair<Integer, Integer> teamMove : gamePiece.getValidMoveDestinations()) {
-                    return true;
+                    if (moveExitsKingFromCheck(gamePiece, teamMove)) {
+                        return true;
+                    }
                 }
             }
         }
@@ -138,28 +141,35 @@ public class Board {
         return false;
     }
 
+    private boolean moveExitsKingFromCheck (GenericGamePiece gamePiece, Pair<Integer,Integer> move) {
+        boolean moveExitsKingFromCheck = false;
+        Pair<Integer,Integer> oldLocation = gamePiece.getLocation();
+        GenericGamePiece destinationPiece = getPieceAtLocationIfExtant(move);
+        if (destinationPiece != null) {
+            destinationPiece.isInPlay = false;
+        }
+        gamePiece.moveTo(move);
+        if (!locationPutsKingInCheck(getKing(gamePiece.isWhite), getKing(gamePiece.isWhite).getLocation())) {
+            moveExitsKingFromCheck = true;
+        }
+        gamePiece.moveTo(oldLocation);
+        if (destinationPiece != null) {
+            destinationPiece.isInPlay = true;
+        }
+        return moveExitsKingFromCheck;
+    }
+
     private boolean kingsTeamCanBlockCheck(King king) {
-        boolean canExitCheck = false;
         for (GenericGamePiece gamePiece : getPiecesInPlay()) {
             if (gamePiece.isWhite == king.isWhite) {
                 for (Pair<Integer,Integer> move : gamePiece.getValidMoveDestinations()) {
-                    Pair<Integer,Integer> oldLocation = gamePiece.getLocation();
-                    GenericGamePiece destinationPiece = getPieceAtLocationIfExtant(move);
-                    if (destinationPiece != null) {
-                        destinationPiece.isInPlay = false;
-                    }
-                    gamePiece.moveTo(move);
-                    if (!locationPutsKingInCheck(king, king.getLocation())) {
-                        canExitCheck = true;
-                    }
-                    gamePiece.moveTo(oldLocation);
-                    if (destinationPiece != null) {
-                        destinationPiece.isInPlay = true;
+                    if (moveExitsKingFromCheck(gamePiece, move)) {
+                        return true;
                     }
                 }
             }
         }
-        return canExitCheck;
+        return false;
     }
 
     public void makeMove(GenericGamePiece gamePiece, Pair<Integer,Integer> move) {
